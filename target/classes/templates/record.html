@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Specimen System</title>
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-Ht+J1Df+Bv7FHG/x5IuP7/IpK5ZEuP+oRVksW8p1Zr+ca0L57PW0+Q1WsbHlGKjtfDz0zflGeC4xF4tiF4sKsA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Bootstrap JS files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Bl1mJW1+TBGccT44yLU/hvohYfSeWcJ55v0sWdCww0+EZXBxzwfEJvT8wY0BpBfD+TKX9tJP8OzGUCf3+27OWA==" crossorigin="anonymous" />
+</head>
+<style>
+#button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#top-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+#top-button i {
+  font-size: 24px;
+}
+.print-page-container {
+  position: relative;
+  top: 80%;
+  left: 98%;
+  transform: translateX(-50%);
+}
+.print-page-button {
+  padding: 14px 23px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0074D9;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.print-page-button:hover {
+  background-color: #fff;
+  color: #0074D9;
+  box-shadow: 0 0 10px rgba(0, 116, 217, 0.5);
+}
+.back-button{
+position: absolute;
+}
+
+</style>
+<body>
+<!--<button id="top-button" onclick="printPage()" style="background-color: #002244; color: white;"><i-->
+<!--        class="fas fa-print"></i></button>-->
+<div class="print-page-container">
+    <button class="print-page-button"><img src="https://cdn-icons-png.flaticon.com/512/443/443123.png" style=" height=10px; position: fixed;
+		        left :15px;
+		        top : 9px;
+		        width: 18px;"></button>
+</div>
+
+<div class="container">
+
+    <h1 class="text-center my-5">Record</h1>
+
+    <div class="card my-3">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Weight</th>
+                <th>Height</th>
+                <th>Blood-Group</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="pa:${findPatientByPatientId}">
+                <td th:text="${pa.patientId}"></td>
+                <td th:text="${pa.patientName}"></td>
+                <td th:text="${pa.patientAge}"></td>
+                <td th:text="${pa.patientWeight}"></td>
+                <td th:text="${pa.patientHeight}"></td>
+                <td th:text="${pa.patientBlood}"></td>
+                <td th:text="${pa.patientAddress}"></td>
+                <td th:text="${pa.patientPhone}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card my-3">
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Specimen Id</th>
+                <th>Patient Id</th>
+                <th>Specimen Type</th>
+                <th>Collection Date</th>
+                <th>Collection Location</th>
+                <th>Preservation Method</th>
+                <th>Storage Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="sp:${findSpecimenByPatientId}">
+                <td th:text="${sp.specimenId}"></td>
+                <td th:text="${sp.patientId}"></td>
+                <td th:text="${sp.specimenType}"></td>
+                <td th:text="${sp.collectionDate}"></td>
+                <td th:text="${sp.collectionLocation}"></td>
+                <td th:text="${sp.preservationMethod}"></td>
+                <td th:text="${sp.storageLocation}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="back-button">
+    <button id="button" onclick="goBack()" style="background-color: #002244; color: white; position: relative; bottom:-100px; left: 645% ; width: 80px; height: 43px">Back</button>
+</div>
+</div>
+
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+
+}
+
+
+function printPage() {
+  window.print();
+}
+const printButton = document.querySelector('.print-page-button');
+printButton.addEventListener('click', () => {
+  window.print();
+});
+
+</script>
+
+
+</body>
+</html>
