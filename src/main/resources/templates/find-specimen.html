@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab Specimen System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+    /* Custom styles for the sidebar */
+    
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      background-color: #0F4C81;
+     
+      z-index: 1;
+      transition: transform .3s ease-in-out;
+    }
+.sidebar .nav-link {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 6px 28px;
+      color:#FFFFFF;
+      font-family: Calibri ;
+      
+    }
+
+    .sidebar-menu li:before {
+  content: "";
+  border-left: 1px solid #ddd;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+    .sidebar-menu li {
+        list-style: none;
+  border-bottom: 1px solid black;
+}
+    /* Custom styles for the body */
+    .body-content {
+      margin-left: 270px;
+      margin-right:20px;
+      padding: 50px;
+      background-color: #E6F2F8;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      border-color:black;
+    }
+    .body-content h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .body-content p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+    }
+body h3{
+    padding-left:px;
+    padding-top:42px;
+text-align: center;
+font-size:30px;
+font-weight: bold;
+
+  }
+  
+  body{
+      background-color:white;
+  }
+  
+  .aside-tools {
+    --tw-bg-opacity: 1;
+    background-color: #002147;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0%;
+    height: 3.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    width: 100%;
+}
+
+.menu-label {
+    margin: 0;
+    font-size: .70rem;
+    line-height: 0.5rem;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(156,163,175,var(--tw-text-opacity));
+}
+.sidebar-header{
+    text-align:center;
+    
+}
+
+html {
+font-family: Arial, sans-serif;
+}
+
+.top-body-content {
+      margin-left: 270px;
+      margin-right:20px;
+      padding: 5px;
+      padding-bottom: 100px;
+      margin-top:20px;
+      margin-bottom:20px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      border-color:black;
+      height:10px;
+      min-height: 150px;
+  }
+  
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="top-body-content" style="background-image: url('https://img.freepik.com/premium-vector/chemistry-laboratory-flat-color-science-lab-pharmaceutical-research-center-2d-cartoon-interior-design-with-medical-equipment-background-modern-medical-institution-decor_151150-3091.jpg?w=996'); background-repeat: no-repeat; background-position: 270px -100px; background-attachment: fixed; background-size: 1235px ;
+	    width: px;
+        height: 180px;">
+        <main class="container py-4">
+            <h3 class="m3-0">Lab Specimen System</h3>
+        </main>
+    </div>
+
+</header>
+
+
+</header>
+<div class="sidebar">
+    <div class="aside-tools">
+        <div class="sidebar-header" style="text-align: center; vertical-align: middle; font-size: 18px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/234/234679.png?w=740&t=st=1680157910~exp=1680158510~hmac=8a77342d0eb251198822719b86b8495718c6fe26d993e903b3e6e83ff80aee13"
+                 style="vertical-align: middle; height=10px;position: absolute;
+			right: 200px;
+			bottom: 698px;
+			px; width: 24px; ">
+            <p></p>
+            <p style="font-size:16px;padding-left:50px;font-weight: bold;">Admin System
+            <p>
+        </div>
+    </div>
+
+    <ul class="nav flex-column">
+        <li class="nav-item ">
+            <p class="menu-label">GENERAL</p>
+            <a class="nav-link " href="/homepage"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" style="vertical-align: middle; height=10px;position: absolute;
+			right: 228px;
+			bottom: 623px;
+			px; width: 18px;">Home</a>
+        </li>
+
+        <li class="nav-item ">
+            <p class="menu-label">PATIENT</p>
+            <a class="nav-link" href="/addPatient"><img src="https://cdn-icons-png.flaticon.com/512/7640/7640151.png"
+                                                        style="vertical-align: middle; height=10px;position: absolute;
+			left :4px;
+			bottom: 556px;
+			px; width: 20px;">Add Patient</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/updatePatient"><img src="https://cdn-icons-png.flaticon.com/512/9053/9053242.png"
+                                                           style="vertical-align: middle; height=10px;position: absolute;
+			right: 227px;
+			bottom: 520px;
+			px; width: 20px;">Update Patient</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/deletePatient"><img src="https://cdn-icons-png.flaticon.com/512/1251/1251053.png"
+                                                           style="vertical-align: middle; height=10px;position: absolute;
+			right: 228px;
+			bottom: 484px;
+			px; width: 17px; ">Delete Patient</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/findPatient"><img src="https://cdn-icons-png.flaticon.com/512/2886/2886669.png"
+                                                         style="vertical-align: middle; height=10px;position: absolute;
+			right: 227px;
+			bottom: 448px;
+			px; width: 18px;">Find Patient</a>
+        </li>
+        <li class="nav-item">
+            <p class="menu-label">SPECIMEN</p>
+            <a class="nav-link" href="/addSpecimen"><img src="https://cdn-icons-png.flaticon.com/512/8270/8270047.png"
+                                                         style="vertical-align: middle; height=10px;position: absolute;
+
+			right: 225px;
+			bottom: 381px;
+			px; width: 23px;">Add Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/updateSpecimen"><img
+                    src="https://cdn-icons-png.flaticon.com/512/10322/10322489.png" style="vertical-align: middle; height=10px;position: absolute;
+
+			right: 227px;
+			bottom: 345px;
+			px; width: 17px;">Update Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/deleteSpecimen"><img
+                    src="https://cdn-icons-png.flaticon.com/512/3221/3221845.png" style="vertical-align: middle; height=10px;position: absolute;
+			top: px;
+			right: 227px;
+			bottom: 309px;
+			px; width: 20px;">Delete Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/findSpecimen"><img src="https://cdn-icons-png.flaticon.com/512/8925/8925976.png"
+                                                          style="vertical-align: middle; height=10px;position: absolute;
+			top: px;
+			right: 227px;
+			bottom: 273px;
+			px; width: 18px;">Find Specimen</a>
+        </li>
+        <li class="nav-item">
+            <p class="menu-label">OTHER INFORMATION</p>
+            <a class="nav-link" href="/findRecord"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921087.png"
+                                                        style="vertical-align: middle; height=10px;position: absolute;
+			right: 223px;
+			bottom: 204px;
+			px; width: 19px;">Records</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="body-content">
+    <h4 style="text-align:center;">
+        <span style="opacity:0.4">Admin /</span><span> Find Specimen Details</span><br><br><br>
+
+    </h4>
+
+    <main class="container py-4">
+
+        <form action="/findSpecimenBySpecimenId">
+
+
+            <div class="form-group">
+                <label for="inputSpecimenId">Specimen ID</label>
+                <input type="number" class="form-control" id="specimenId" name="specimenId"
+                       placeholder="Enter Specimen " value="0">
+            </div>
+
+            <button type="submit" class="btn" style="background-color: #002244; color: white;">Submit</button>
+            <div class="container">
+                <br><br><br>
+                <h4 style=font:calibri|>Specimen Details</h4>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Specimen Id</th>
+                        <th>Patient Id</th>
+                        <th>Specimen Type</th>
+                        <th>Collection Date</th>
+                        <th>Collection Location</th>
+                        <th>Preservation Method</th>
+                        <th>Storage Location</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="sp:${findSpecimenBySpecimenId}">
+                        <td th:text="${sp.specimenId}"></td>
+                        <td th:text="${sp.patientId}"></td>
+                        <td th:text="${sp.specimenType}"></td>
+                        <td th:text="${sp.collectionDate}"></td>
+                        <td th:text="${sp.collectionLocation}"></td>
+                        <td th:text="${sp.preservationMethod}"></td>
+                        <td th:text="${sp.storageLocation}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </main>
+</div>
+
+</body>
+</html>

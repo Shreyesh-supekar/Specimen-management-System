@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab Specimen System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+    /* Custom styles for the sidebar */
+  .count-container {
+   			background-color:#AFDBF5;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .count-number {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .count-label {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #777;
+        }  
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      background-color: #0F4C81;  
+      z-index: 1;
+      transition: transform .3s ease-in-out;
+    }
+.sidebar .nav-link {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 6px 28px;
+      color:#FFFFFF;
+      font-family: Calibri ;
+      
+    }
+
+    .sidebar-menu li:before {
+  content: "";
+  border-left: 1px solid #ddd;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+    .sidebar-menu li {
+        list-style: none;
+  border-bottom: 1px solid black;
+}
+    /* Custom styles for the body */
+    .body-content {
+      margin-left: 270px;
+      margin-right:20px;
+      padding: 50px;
+      background-color: #E6F2F8;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      border-color:black;
+    }
+    .body-content h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .body-content p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+    }
+body h3{
+    padding-left:px;
+    padding-top:42px;
+text-align: center;
+font-size:30px;
+font-weight: bold;
+
+  }
+  
+  body{
+      background-color:white;
+  }
+  
+  .aside-tools {
+    --tw-bg-opacity: 1;
+    background-color: #002147;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0%;
+    height: 3.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    width: 100%;
+}
+
+.menu-label {
+    margin: 0;
+    font-size: .70rem;
+    line-height: 0.5rem;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(156,163,175,var(--tw-text-opacity));
+}
+.sidebar-header{
+    text-align:center;
+    
+}
+
+html {
+font-family: Arial, sans-serif;
+}
+
+.top-body-content {
+      margin-left: 270px;
+      margin-right:20px;
+      padding: 5px;
+      padding-bottom: 100px;
+      margin-top:20px;
+      margin-bottom:20px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      border-color:black;
+      height:10px;
+      min-height: 150px;
+  }
+  
+  
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="top-body-content" style="background-image: url('https://img.freepik.com/premium-vector/chemistry-laboratory-flat-color-science-lab-pharmaceutical-research-center-2d-cartoon-interior-design-with-medical-equipment-background-modern-medical-institution-decor_151150-3091.jpg?w=996'); background-repeat: no-repeat; background-position: 270px -100px; background-attachment: fixed; background-size: 1235px ;
+	    width: px;
+        height: 180px;">
+        <main class="container py-4">
+            <h3 class="m3-0">Lab Specimen System</h3>
+        </main>
+    </div>
+
+</header>
+<div class="sidebar">
+    <div class="aside-tools">
+        <div class="sidebar-header" style="text-align: center; vertical-align: middle; font-size: 18px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/234/234679.png?w=740&t=st=1680157910~exp=1680158510~hmac=8a77342d0eb251198822719b86b8495718c6fe26d993e903b3e6e83ff80aee13"
+                 style="vertical-align: middle; height=10px;position: absolute;
+			right: 200px;
+			bottom: 698px;
+			px; width: 24px; ">
+            <p></p>
+            <p style="font-size:16px;padding-left:50px;font-weight: bold;">Admin System
+            <p>
+        </div>
+    </div>
+
+    <ul class="nav flex-column">
+        <li class="nav-item ">
+            <p class="menu-label">GENERAL</p>
+            <a class="nav-link " href="/homepage"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" style="vertical-align: middle; height=10px;position: absolute;
+			right: 228px;
+			bottom: 623px;
+			px; width: 18px;">Home</a>
+        </li>
+
+        <li class="nav-item ">
+            <p class="menu-label">PATIENT</p>
+            <a class="nav-link" href="/addPatient"><img src="https://cdn-icons-png.flaticon.com/512/7640/7640151.png"
+                                                        style="vertical-align: middle; height=10px;position: absolute;
+			left :4px;
+			bottom: 556px;
+			px; width: 20px;">Add Patient</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/updatePatient"><img src="https://cdn-icons-png.flaticon.com/512/9053/9053242.png"
+                                                           style="vertical-align: middle; height=10px;position: absolute;
+			right: 227px;
+			bottom: 520px;
+			px; width: 20px;">Update Patient</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/deletePatient"><img src="https://cdn-icons-png.flaticon.com/512/1251/1251053.png"
+                                                           style="vertical-align: middle; height=10px;position: absolute;
+			right: 228px;
+			bottom: 484px;
+			px; width: 17px; ">Delete Patient</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/findPatient"><img src="https://cdn-icons-png.flaticon.com/512/2886/2886669.png"
+                                                         style="vertical-align: middle; height=10px;position: absolute;
+			right: 227px;
+			bottom: 448px;
+			px; width: 18px;">Find Patient</a>
+        </li>
+        <li class="nav-item">
+            <p class="menu-label">SPECIMEN</p>
+            <a class="nav-link" href="/addSpecimen"><img src="https://cdn-icons-png.flaticon.com/512/8270/8270047.png"
+                                                         style="vertical-align: middle; height=10px;position: absolute;
+
+			right: 225px;
+			bottom: 381px;
+			px; width: 23px;">Add Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/updateSpecimen"><img
+                    src="https://cdn-icons-png.flaticon.com/512/10322/10322489.png" style="vertical-align: middle; height=10px;position: absolute;
+
+			right: 227px;
+			bottom: 345px;
+			px; width: 17px;">Update Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/deleteSpecimen"><img
+                    src="https://cdn-icons-png.flaticon.com/512/3221/3221845.png" style="vertical-align: middle; height=10px;position: absolute;
+			top: px;
+			right: 227px;
+			bottom: 309px;
+			px; width: 20px;">Delete Specimen</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/findSpecimen"><img src="https://cdn-icons-png.flaticon.com/512/8925/8925976.png"
+                                                          style="vertical-align: middle; height=10px;position: absolute;
+			top: px;
+			right: 227px;
+			bottom: 273px;
+			px; width: 18px;">Find Specimen</a>
+        </li>
+        <li class="nav-item">
+            <p class="menu-label">OTHER INFORMATION</p>
+            <a class="nav-link" href="/findRecord"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921087.png"
+                                                        style="vertical-align: middle; height=10px;position: absolute;
+			right: 223px;
+			bottom: 204px;
+			px; width: 19px;">Records</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="body-content">
+    <h4 style="text-align:center;">
+        <span style="opacity:0.4">Admin /</span><span> Home</span><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="count-container" style="position:relative; left:150px;">
+                        <div class="count-number"><span th:text="${patientCount}"></span></div>
+                        <div class="count-label">Patient Count</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="count-container" style="position:relative; left:400px;">
+                        <div class="count-number"><span th:text="${specimenCount}"></span></div>
+                        <div class="count-label">Specimen Count</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </h4>
+    <h2>Introduction to Specimen Collection</h2>
+    <p>Laboratory tests contribute vital information about a patient's health. Correct diagnostic and therapeutic
+        decisions rely, in part, on the accuracy of test results. Adequate patient preparation, specimen collection, and
+        specimen handling are essential prerequisites for accurate test results. The accuracy of test results is
+        dependent on the integrity of specimens.</p>
+
+    <h4 style="font-weight: bold;opacity: 0.7;">Safety and Disposal Considerations in</h4>
+    <p>Specimen Collection
+        In all settings in which specimens are collected and prepared for testing, laboratory and health care personnel
+        should follow current recommended sterile techniques, including precautions regarding the use of needles and
+        other sterile equipment. Treat all biological material as material that is potentially hazardous as well as
+        contaminated specimen collection supplies. For all those who are involved in specimen collection and
+        preparation, the responsibility to adhere to current recommendations designed to maintain the safety of both
+        patients and health care workers does not end when the patient is dismissed.</p>
+
+    <p>There are four steps involved in obtaining a good quality specimen for testing: (1) preparation of the patient,
+        (2) collection of the specimen, (3) processing the specimen, and (4) storing and/or transporting the specimen.
+        Since information related to any of these areas may change as clinical laboratory technology changes, please
+        refer to the latest edition of the Labcorp Directory of Services and Interpretive Guide for current
+        instructions.</p>
+
+    <h4 style="font-weight: bold;opacity: 0.7">Preparation</h4>
+    <p>Prior to each collection, review the appropriate test description, including the specimen type indicated, the
+        volume, the procedure, the collection materials, patient preparation, and storage and handling instructions.</p>
+
+    <p>
+        <h7 style="font-weight: bold;">Preparing the Patient</h7>
+        . Provide the patient, in advance, with appropriate collection instructions and information on fasting, diet,
+        and medication restrictions when indicated for the specific test
+    <p>
+
+    <p>
+        <h7 style="font-weight: bold;">
+            Preparing the Specimen.
+        </h7>
+        Verify the patient's identification. Proper identification of specimens is extremely important. All primary
+        specimen containers must be labeled with at least two identifiers at the time of collection. Submitted slides
+        may be labeled with a single identifier, but two identifiers are preferred. Examples of acceptable identifiers
+        include (but are not limited to): patient's name (patient's first and last name exactly as they appear on the
+        test request form), date of birth, hospital number, test request form number, accession number, or unique random
+        number. A
+    </p>
+
+    <p>location such as a hospital room number is not an appropriate patient identifier. If chain of custody
+        documentation is necessary for the procedure, follow the appropriate protocol. All specimens should be labeled
+        in the presence of the patient. Process and store the specimen(s) as required. Appropriate storage and handling
+        are necessary to maintain the integrity of the specimen and, consequently, the test results.</p>
+
+    <h4 style="font-weight: bold;opacity: 0.7;">Avoiding Common Problems</h4>
+
+    <p>Careful attention to routine procedures can eliminate most of the potential problems related to specimen
+        collection. Materials provided by the laboratory for specimen collection can maintain the quality of the
+        specimen only when they are used in strict accordance with the instructions provided. To collect a sufficient
+        quantity of each type of specimen indicated for the procedures to be performed, please consult the volume
+        requirements published in this Directory.</p>
+
+    <h5 style="font-weight: bold;opacity: 0.7">General Specimen Collection.</h5>
+    <p> Some of the common considerations affecting all types of specimens:</p>
+
+    <p> - Please examine specimen collection and transportation supplies to be sure they do not include expired
+        containers.</p>
+    <p> - Label a specimen correctly and provide all pertinent information required on the test request form. (See Blood
+        Specimens: Chemistry and Hematology − Blood Collection/Transport Containers.)</p>
+    <p> - Submit a quantity of specimen sufficient to perform the test and avoid a QNS (quantity not sufficient), as
+        indicated in the test requirements. (See Quantity Not Sufficient.)</p>
+    <p> - Use the container/tube indicated in the test requirements for appropriate specimen preservation.
+    <p>
+    <p> - Follow patient instructions prior to specimen collection Including the proper order of blood draw when
+        multiple tubes are required. (See Blood Specimens: Chemistry and Hematology – Consideration for Single and
+        Multiple Sample Collection.)</p>
+    <p> - Carefully tighten specimen container lids to avoid leakage and/or potential contamination of specimens.</p>
+    <p> - Maintain and transport the specimen at the temperature indicated in the test requirements.</p>
+    <p> - Mix specimen with additive immediately after collection by inverting 5-10 times.</p>
+    <h5 style="font-weight: bold;opacity: 0.7;">Serum Preparation. The most common serum preparation
+        considerations:</h5>
+
+    <p> - Separate serum from red cells within two hours of venipuncture.</p>
+    <p> - Mix by inverting specimen with additive immediately after collection.</p>
+    <p> - Allow specimens collected in a clot tube (eg, red-top or gel-barrier tube) to clot before centrifugation. (See
+        Blood Specimens: Chemistry and Hematology − Preparing Serum on clotting and gel-barrier tubes and red-top
+        tubes.)</p>
+    <p> - Avoid hemolysis: red blood cells broken down and components spilled into serum. Causes and prevention are
+        discussed under the section on hemolysis.</p>
+    <p> - Avoid lipemia: cloudy or milky serum sometimes due to the patient's diet (discussed under the section on
+        lipemia).</p>
+    <h5 style="font-weight: bold;opacity: 0.7;">Plasma Preparation. The most common considerations in the preparation of
+        plasma:</h5>
+
+    <p> - Collect specimen in additive indicated in the test requirements.</p>
+    <p> - Mix specimen with additive immediately after collection by inverting 5-10 times.</p>
+    <p> - Avoid hemolysis or red blood cell breakdown.</p>
+    <p> - Fill the tube completely, thereby avoiding a dilution factor excessive for total specimen volume (QNS).</p>
+    <p> - Separate plasma from cells within two hours of venipuncture or as indicated in the test requirements.
+    <p>
+    <p> - Label transport tubes as “plasma”
+        Indicate type of anticoagulant (eg, “EDTA,” “citrate,” etc)</p>
+    <h5 style="font-weight: bold;opacity: 0.7">Urine Collection. The most common urine collection considerations:</h5>
+
+    <p> - Obtain a clean-catch, midstream specimen.</p>
+    <p> - Store unpreserved specimens refrigerated or in a cool place until ready for transport.</p>
+    <p> - Provide patients with instructions for 24-hour urine collection(s).</p>
+    <p> - Add the preservative (as specified in the test requirements) to the urine collection container prior to
+        collection of the specimen if the preservative is not already in the container.</p>
+    <p> - Provide sufficient quantity of specimen to meet the minimum fill line on preservative transport container.</p>
+    <p> - Provide the proper mixing of specimen with urine preservative as specified in the test requirements.</p>
+    <p> - Use the collection container as specified in the test requirements, and refrigerate the specimen when
+        bacteriological examination of the specimen is required.</p>
+    <p> - Carefully tighten specimen container lids to avoid leakage of specimen.</p>
+
+    <p> - Divide specimen into separate containers for tests with such requirements.</p>
+    <p> - Provide a complete 24-hour collection/aliquot or other timed specimen.</p>
+    <p> - Provide a 24-hour urine volume when an aliquot from the 24-hour collection is submitted.</p>
+    <p> - Preservatives vary for each test; refer to test information for the required preservative.</p>
+    <h4 style="font-weight: bold;opacity: 0.7;">Collection Procedures</h4>
+    <h5 style="font-weight: bold;opacity: 0.7">Collection of Vacuum Tubes Containing Additives (eg, anticoagulants,
+        preservatives, clot activators, gel-barrier). When using vacuum tubes containing an additive:</h5>
+
+    <p>1) Tap the tube gently at a point just below the top to release any additive adhering to the tube or top.</p>
+    <p>2)Permit the tube to fill completely to ensure the proper ratio of blood to additive. There will be some dead
+        space at the top of the tube.</p>
+    <p>3)To allow for adequate mixing of blood with the anticoagulant or preservative, use a slow rolling wrist motion
+        to invert the tube gently four to eight times. Failure to invert tubes may lead to the formation of microscopic
+        clots.</p>
+    <p>4)Rapid wrist motion or vigorous shaking may contribute to hemolysis.</p>
+    <p>5)Check to see that all the preservative or anticoagulant is dissolved. If any preservative powder is visible,
+        continue inverting the tube slowly until the powder is dissolved.</p>
+    <p>6)If multiple samples are being drawn, invert each specimen as soon as it is drawn. Do not delay. Place the tube
+        upright in a rack as quickly as possible after collection.</p>
+    <p>7)The gel-barrier tube is an additive tube and should be inverted five to six times after collection. Allow the
+        tube to stand for 30 to 60 minutes for complete clotting to occur prior to centrifugation.</p>
+    <h5 style="font-weight: bold;opacity: 0.7">Collection of Vacuum Tubes Without Anticoagulants. When using vacuum
+        tubes containing no additives:</h5>
+
+    <p>1)Permit the tube to fill completely.</p>
+    <p>2)Let the specimen stand for 30 to 60 minutes and (preferably) not longer than 60 minutes prior to
+        centrifugation.</p>
+    <p>3)Centrifuge the specimen at the end of the waiting period in accordance with the manufacturer's instructions for
+        speed.</p>
+
+
+</div>
+
+</body>
+</html>
